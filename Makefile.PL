@@ -6,12 +6,13 @@ use warnings FATAL => 'all';
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    'NAME'          => 'prancer-plugin-logger-log-log4perl',
+    'NAME'          => 'prancer-plugin-log4perl',
     'AUTHOR'        => 'Paul Lockaby <plockaby AT cpan DOT org>',
-    'VERSION_FROM'  => 'lib/Prancer/Plugin/Logger/Log/Log4perl.pm',
+    'VERSION_FROM'  => 'lib/Prancer/Plugin/Log4perl.pm',
     'PREREQ_PM'     => {
         'Prancer'       => '1.00',
         'Log::Log4perl' => '0',
+        'Log::Dispatch' => '0',
         'Try::Tiny'     => '0',
         'perl'          => '5.010',  # because "//" is used
     },
