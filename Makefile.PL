@@ -6,7 +6,7 @@ use warnings FATAL => 'all';
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    'NAME'          => 'prancer-plugin-log4perl',
+    'NAME'          => 'Prancer::Plugin::Log4perl',
     'AUTHOR'        => 'Paul Lockaby <plockaby AT cpan DOT org>',
     'VERSION_FROM'  => 'lib/Prancer/Plugin/Log4perl.pm',
     'PREREQ_PM'     => {
