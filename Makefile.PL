@@ -10,7 +10,7 @@ WriteMakefile(
     'AUTHOR'        => 'Paul Lockaby <plockaby AT cpan DOT org>',
     'VERSION_FROM'  => 'lib/Prancer/Plugin/Log4perl.pm',
     'PREREQ_PM'     => {
-        'Prancer'       => '0.990003',
+        'Prancer'       => '1.00',
         'Log::Log4perl' => '0',
         'Log::Dispatch' => '0',
         'Try::Tiny'     => '0',
