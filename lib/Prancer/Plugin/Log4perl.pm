@@ -49,9 +49,9 @@ Prancer::Plugin::Log4perl
 
 =head1 SYNOPSIS
 
-This plugin connects your application go L<Log::Log4perl> and exports a keyword
-to access the configured logger. You don't I<need> this module to log things
-but it certainly makes it easier.
+This plugin connects your L<Prancer> application to L<Log::Log4perl> and
+exports a keyword to access the configured logger. You don't I<need> this
+module to log things but it certainly makes it easier.
 
 There is very minimal configuration required to get started with this module.
 To enable the logger you only need to do this:
@@ -66,8 +66,8 @@ To enable the logger you only need to do this:
 By default, this plugin will initialize L<Log::Log4perl> with a very basic
 configuration to avoid warnings when used. You can override the configuration
 by loading your own before calling C<load> on this plugin. This plugin's
-C<load> implementation simply calls C<Log::Log4perl->initialized()> to see if
-it should load its own. For example, you might do this:
+C<load> implementation simply calls C<Log::Log4perl-E<gt>initialized()> to see
+if it should load its own. For example, you might do this:
 
     use Prancer::Plugin::Log4perl qw(logger);
 
@@ -97,4 +97,3 @@ the same terms as Perl itself.
 =back
 
 =cut
-
