@@ -35,7 +35,6 @@
             "Prancer" : "1.00",
             "Log::Log4perl" : "0",
             "Try::Tiny" : "0",
-            "perl" : "5.010"
          }
       }
    },
