@@ -3,9 +3,10 @@
 use strict;
 use warnings FATAL => 'all';
 
-use Prancer qw(config);
+use File::Basename ();
+use Log::Log4perl;
 
-# load the logger plugin
+use Prancer::Core qw(config);
 use Prancer::Plugin::Log4perl qw(logger);
 
 sub main {
@@ -14,7 +15,7 @@ sub main {
 
     # this just returns a prancer object so we can get access to configuration
     # options and other awesome things like plugins.
-    my $app = Prancer->new("${root}/foobar.yml");
+    my $app = Prancer::Core->new("${root}/foobar.yml");
 
     # in here we get to initialize things!
     Prancer::Plugin::Log4perl->load();
